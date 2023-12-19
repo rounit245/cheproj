@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-simple-black-gourmet-menu-background-picture-image_1317710.jpg");
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(91, 15, 15, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .menu-item-details {
+            flex: 1;
+        }
+
+        .menu-item-details h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .menu-item-details p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .menu-item-rate {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        .box {
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        #freshers {
+            background-color: rgba(213, 77, 77, 0.8);
+        }
+
+        #breakfast {
+            background-color: rgba(77, 213, 186, 0.8);
+        }
+
+        #lunch {
+            background-color: rgba(163, 77, 213, 0.8);
+        }
+
+        #beverages {
+            background-color: rgba(204, 213, 77, 0.8);
+        }
+
+        .menu-box {
+            background-color: rgb(253, 127, 253);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        button {
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 660px;
+            background-color: bisque;
+        }
+
+        button:hover {
+            background-color: violet;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="menu-box">
+        <h1 style="text-decoration: underline; color: #333;">Our Menu</h1>
+    </header>
+
+    <button style="font-family: fantasy; font-size: x-large;"><a href="order.html">ORDER NOW..</a></button>
+
+    <section class="box" id="freshers">
+        <h2 style="text-decoration: underline; color: #f4f4f4;">Starters</h2>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOF09w4qiUObNGA68SlwR1b_8p0Z1elBW5Xw&usqp=CAU"
+                alt="Fresh Salad">
+            <div class="menu-item-details">
+                <h3>Fresh Salad</h3>
+                <p style="color: white;">Green salad with cherry tomatoes and vinaigrette dressing.</p>
+            </div>
+            <div class="menu-item-rate">130₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.jessicagavin.com/wp-content/uploads/2020/06/tropical-smoothie-5-1200.jpg"
+                alt="Tropical Bliss Smoothie">
+            <div class="menu-item-details">
+                <h3>Tropical Smoothie</h3>
+                <p style="color: white;">Mango, banana, and pineapple blended with yogurt. A taste of the tropics in a
+                    cup.</p>
+            </div>
+            <div class="menu-item-rate">100₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://simplyfreshfoodie.com/wp-content/uploads/2021/08/DSC_0546.jpg" alt="Avocado Toast">
+            <div class="menu-item-details">
+                <h3>Avocado Toast</h3>
+                <p style="color: white;">Creamy avocado on whole-grain toast with cherry tomatoes. A classic favorite.
+                </p>
+            </div>
+            <div class="menu-item-rate">130₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://flouronmyface.com/wp-content/uploads/2022/04/citrus_fruit_salad.jpg"
+                alt="Citrus Fruit Cup">
+            <div class="menu-item-details">
+                <h3>Citrus Fruit Cup</h3>
+                <p style="color: white;">A mix of citrus fruits with a touch of mint. A burst of citrusy goodness.</p>
+            </div>
+            <div class="menu-item-rate">70₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka-featured.jpg"
+                alt="Paneer Tikka">
+            <div class="menu-item-details">
+                <h3>Paneer Tikka</h3>
+                <p style="color: white;">Succulent cubes of paneer marinated in aromatic spices</p>
+            </div>
+            <div class="menu-item-rate">110₹</div>
+        </div>
+
+    </section>
+    <section class="box" id="breakfast">
+        <h2 style="text-decoration: underline; color: #f4f4f4;">Breakfast</h2>
+        <!-- Add breakfast items similarly -->
+        <div class="menu-item">
+            <img src="https://i.pinimg.com/736x/e8/dc/7f/e8dc7f0b59b8602ba30621dee3c6291c.jpg" alt="Masala Dosa">
+            <div class="menu-item-details">
+                <h3>Masala Dosa</h3>
+                <p style="color: white;">Thin rice crepes filled with a spiced potato mixture. Served with coconut
+                    chutney and tangy sambar.</p>
+            </div>
+            <div class="menu-item-rate">60₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.spiceupthecurry.com/wp-content/uploads/2014/04/batata-poha-recipe-1.jpg" alt="Poha">
+            <div class="menu-item-details">
+                <h3>Poha</h3>
+                <p style="color: white;">Flattened rice cooked with mustard seeds, curry leaves, turmeric.</p>
+            </div>
+            <div class="menu-item-rate">35₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://cookingfromheart.com/wp-content/uploads/2020/09/Aloo-Paratha-4.jpg" alt="Aloo Paratha">
+            <div class="menu-item-details">
+                <h3>Aloo Paratha-3</h3>
+                <p style="color: white;">Whole wheat flatbread stuffed with a spiced potato filling.</p>
+            </div>
+            <div class="menu-item-rate">40₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/03/chana-chaat-recipe-1.jpg"
+                alt="Chana Chaat">
+            <div class="menu-item-details">
+                <h3>Chana Chaat</h3>
+                <p style="color: white;">Chickpeas mixed with chopped vegetables, spices, and tamarind chutney.</p>
+            </div>
+            <div class="menu-item-rate">40₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.honeywhatscooking.com/wp-content/uploads/2023/06/Rava-Upma-FeaturedImage.jpg"
+                alt="Upma">
+            <div class="menu-item-details">
+                <h3>Upma</h3>
+                <p style="color: white;">Semolina cooked with mustard seeds, green chilies, and vegetables.</p>
+            </div>
+            <div class="menu-item-rate">45₹</div>
+        </div>
+    </section>
+
+    <section class="box" id="lunch">
+        <h2 style="text-decoration: underline; color: #f4f4f4;">Main Course</h2>
+        <!-- Add lunch items similarly -->
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/dal-tadka-recipe.jpg"
+                alt="Dal Tadka">
+            <div class="menu-item-details">
+                <h3>Dal Tadka</h3>
+                <p style="color: white;">Yellow lentils tempered with mustard seeds, cumin, and garlic. A comforting and
+                    protein-rich lentil dish.</p>
+            </div>
+            <div class="menu-item-rate">150₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://gypsyplate.com/wp-content/uploads/2022/10/palak-paneer_square-480x480.jpg"
+                alt="Palak Paneer">
+            <div class="menu-item-details">
+                <h3>Palak Paneer</h3>
+                <p style="color: white;">Soft paneer cubes cooked in a flavorful spinach and tomato-based gravy. A
+                    nutritious and tasty option.</p>
+            </div>
+            <div class="menu-item-rate">175₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot.jpg"
+                alt="Vegetable Biryani">
+            <div class="menu-item-details">
+                <h3>Vegetable Biryani</h3>
+                <p style="color: white;">Fragrant basmati rice cooked with mixed vegetables and aromatic spices.</p>
+            </div>
+            <div class="menu-item-rate">250₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg" alt="Rajma Chawal">
+            <div class="menu-item-details">
+                <h3>Rajma Chawal</h3>
+                <p style="color: white;">Red kidney beans cooked in a thick tomato-based gravy, served with steamed
+                    rice. A North Indian classic.</p>
+            </div>
+            <div class="menu-item-rate">200₹</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/09/Indian-Aloo-Gobi-480x270.jpg"
+                alt="Aloo Gobi">
+            <div class="menu-item-details">
+                <h3>Aloo Gobi</h3>
+                <p style="color: white;">Cauliflower and potatoes cooked with turmeric, cumin, and coriander. A simple
+                    yet delicious vegetable dish.</p>
+            </div>
+            <div class="menu-item-rate">120₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg"
+                alt="Roti">
+            <div class="menu-item-details">
+                <h3>Roti-4</h3>
+                <p style="color: white;">Soft whole wheat flatbreads (roti) served .</p>
+            </div>
+            <div class="menu-item-rate">30₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/12/jeera-rice-cumin-rice.jpg.webp"
+                alt="Jeera Rice">
+            <div class="menu-item-details">
+                <h3>Jeera Rice</h3>
+                <p style="color: white;">Fragrant cumin-flavored rice (jeera rice) served with dal fry, a lentil dish
+                    cooked with onions, tomatoes, and aromatic spices. A simple and comforting combination.</p>
+            </div>
+            <div class="menu-item-rate">140₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/veg-pulao-recipe.jpg"
+                alt="Vegetable Pulao">
+            <div class="menu-item-details">
+                <h3>Vegetable Pulao</h3>
+                <p style="color: white;">Fragrant basmati rice cooked with mixed vegetables, aromatic spices, and
+                    garnished with fried onions. </p>
+            </div>
+            <div class="menu-item-rate">250₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://spicecravings.com/wp-content/uploads/2020/08/Matar-Paneer-2-500x500.jpg"
+                alt="Matar Paneer">
+            <div class="menu-item-details">
+                <h3>Matar Paneer</h3>
+                <p style="color: white;">Soft paneer cubes and green peas cooked in a spiced tomato-based gravy.</p>
+            </div>
+            <div class="menu-item-rate">230₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2012/11/aloo-palak-500x500.jpg"
+                alt="Aloo Palak">
+            <div class="menu-item-details">
+                <h3>Aloo Palak</h3>
+                <p style="color: white;">Potatoes and spinach cooked in a mildly spiced tomato and onion gravy.</p>
+            </div>
+            <div class="menu-item-rate">150₹</div>
+        </div>
+    </section>
+
+    <section class="box" id="beverages">
+        <h2 style="text-decoration: underline; color: #f4f4f4;">Beverages</h2>
+        <!-- Add beverage items similarly -->
+        <div class="menu-item">
+            <img src="https://cdn.shopify.com/s/files/1/0528/5173/6769/files/TPS---1080-X-683-pxl---03-06-22--A1.jpg?v=1654254511"
+                alt="Masala Chai">
+            <div class="menu-item-details">
+                <h3>Masala Chai</h3>
+                <p style="color: white;">A traditional Indian spiced tea made with black tea leaves, aromatic spices
+                    like cardamom, cinnamon</p>
+            </div>
+            <div class="menu-item-rate">15₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/mango-lassi-recipe.jpg"
+                alt="Mango Lassi">
+            <div class="menu-item-details">
+                <h3>Mango Lassi</h3>
+                <p style="color: white;">A refreshing yogurt-based drink blended with ripe mangoes, sugar, and a touch
+                    of cardamom. </p>
+            </div>
+            <div class="menu-item-rate">30₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://thetravelbite.com/wp-content/uploads/2021/06/Mint-Lemonade-TheTravelBite.com-16-scaled.jpg"
+                alt="Fresh Mint Lemonade">
+            <div class="menu-item-details">
+                <h3>Fresh Mint Lemonade</h3>
+                <p style="color: white;">A cool and rejuvenating drink made with fresh lemon juice, mint leaves, sugar,
+                    and chilled water.</p>
+            </div>
+            <div class="menu-item-rate">35₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/04/badam-milk-featured.jpg"
+                alt="Badam Milk">
+            <div class="menu-item-details">
+                <h3>Badam Milk</h3>
+                <p style="color: white;">A nourishing beverage made with almond paste, milk, and a hint of saffron. </p>
+            </div>
+            <div class="menu-item-rate">40₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://spicecravings.com/wp-content/uploads/2021/07/Jaljeera-3.jpg" alt="Jaljeera">
+            <div class="menu-item-details">
+                <h3>Jaljeera</h3>
+                <p style="color: white;">A tangy and spicy drink made with cumin, mint, tamarind, and black salt. </p>
+            </div>
+            <div class="menu-item-rate">20₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2017/08/coconut-water-bb9cfe8.jpg?resize=768,574"
+                alt="Coconut Water">
+            <div class="menu-item-details">
+                <h3>Coconut Water</h3>
+                <p style="color: white;">Pure and natural coconut water straight from the coconut.</p>
+            </div>
+            <div class="menu-item-rate">25₹</div>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2019/Rose_Lassi_Video_Recipe_2.jpg"
+                alt="Rose Lassi">
+            <div class="menu-item-details">
+                <h3>Rose Lassi</h3>
+                <p style="color: white;">A fragrant and floral lassi made with yogurt, rose water, and a touch of honey.
+                </p>
+            </div>
+            <div class="menu-item-rate">35₹</div>
+        </div>
+    </section>
+
+    <!-- ... (other sections for Breakfast, Lunch, Dinner, Beverages) ... -->
+
+</body>
+
+</html>

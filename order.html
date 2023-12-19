@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210814/pngtree-blue-purple-simple-gradient-background-image_760572.jpg");
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+
+            color: #fff;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(91, 15, 15, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: bisque;
+        }
+
+        button:hover {
+            background-color: violet;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-category {
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+        }
+
+        .menu-item-details {
+            flex: 1;
+        }
+
+        label {
+            display: inline;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-decoration: underline; color: #333;">Order Now</h1>
+    </header>
+
+    <form action="complete.html">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <!-- Starters -->
+        <div class="menu-category">
+            <h2>Starters</h2>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="starters[]" value="Fresh Salad">
+                        Fresh Salad - ₹130
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="starters[]" value="Tropical Smoothie">
+                        Tropical Smoothie - ₹100
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="starters[]" value="Avocado Toast">
+                        Avocado Toast - ₹130
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="starters[]" value="Citrus Fruit Cup">
+                        Citrus Fruit Cup - ₹70
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="starters[]" value="Paneer Tikka">
+                        Paneer Tikka - ₹110
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakfast -->
+        <div class="menu-category">
+            <h2>Breakfast</h2>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="breakfast[]" value="Masala Dosa">
+                        Masala Dosa - ₹60
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="breakfast[]" value="Poha">
+                        Poha - ₹35
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="breakfast[]" value="Aloo Paratha">
+                        Aloo Paratha - ₹40
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="breakfast[]" value="Chana Chaat">
+                        Chana Chaat - ₹40
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="breakfast[]" value="Upma">
+                        Upma - ₹45
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add other breakfast items similarly -->
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category">
+            <h2>Main Course</h2>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Dal Tadka">
+                        Dal Tadka - ₹150
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Palak Paneer">
+                        Palak Paneer - ₹175
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="vegetable Biryani">
+                        Vegetable Biryani - ₹250
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="rajma chawal">
+                        Rajma Chawal - ₹200
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="aloo gobi">
+                        Aloo Gobi - ₹120
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="roti">
+                        Roti - ₹4
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Jeera Rice">
+                        Jeera Rice - ₹140
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Vegetable Pulao">
+                        Vegetable Pulao - ₹250
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Matar Paneer">
+                        Matar Paneer - ₹230
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="mainCourse[]" value="Aloo Palak">
+                        Aloo Palak - ₹150
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add other main course items similarly -->
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-category">
+            <h2>Beverages</h2>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Masala Chai">
+                        Masala Chai - ₹15
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Mango Lassi">
+                        Mango Lassi - ₹30
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Fresh Mint Lemonade">
+                        Fresh Mint Lemonade - ₹35
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Badam Milk">
+                        Badam Milk - ₹40
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Jaljeera">
+                        Jaljeera - ₹20
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Coconut Water">
+                        Coconut Water - ₹25
+                    </label>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <label>
+                        <input type="checkbox" name="beverages[]" value="Rose Lassi">
+                        Rose Lassi - ₹35
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add other beverage items similarly -->
+        </div>
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+</body>
+
+</html>
